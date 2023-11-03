@@ -1,0 +1,66 @@
+
+body
+{
+  background-color: brown;
+}
+
+.cal
+{
+  background-color: beige;
+  margin-left: 650px;
+  margin-top: 160px;
+  width: 200px;
+  height: 295px;
+  border-radius: 20px;
+}
+input
+{
+  width: 40px;
+  border-radius: 2000px;
+  margin-left: 5px;
+  padding: 8px;
+}
+input:hover
+{
+  transform: scale(0.9);
+}
+
+#op:hover
+{
+  transform: scale(1,1);
+}
+#op
+{
+  margin-top: 5px;
+  height: 50px;
+  width: 160px;
+  border-radius: 10px;
+  margin-left: 8px;
+  text-align: right;
+  background-color: grey;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;			
+}
+
+.clor
+{
+  background-color: orange;
+}
+
+.clore
+{
+  background-color: grey;
+}
+
+#zero
+{
+  width: 89px;
+}
+
+.back
+{
+  background-image: url(monkey-4699277_1280.png);
+  background-repeat: no-repeat;
+  background-size: 400px 610px;
+}
