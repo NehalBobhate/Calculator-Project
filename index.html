@@ -8,10 +8,10 @@
 </head>
 <body  class="back">
 	<div class="cal">
-		<b style="text-align: center;margin-left: 47px;">Nehal's Calci</b>
+		<b style="text-align: center;margin-left: 127px;">Nehal's Calci</b>
 
 		<div>
-			<input style="color: white;" type="text" disabled name="op" id="op" placeholder="Welcome!">
+			<input style="color: white;" type="text" disabled name="op" id="op" placeholder="Welcome!" readonly>
 		</div>
 		<br>
 		<form>
@@ -19,29 +19,37 @@
 				<input type="button" value="AC" class="clore" onclick="op.value='' " >
 				<input type="button" value="C"class="clore" onclick="op.value=removeLast(op.value)">
 				<input type="button" value="%" class="clore" onclick="op.value+='%'" >
+				<input type="button" value="&#x221A;" class="clore" onclick="op.value=Math.sqrt(op.value)" >
 				<input type="button" value="/" class="clor" onclick="op.value+='/' " >
 			</div>
 			<div>
 				<input type="button" value="7" onclick="op.value+='7'">
 				<input type="button" value="8"onclick="op.value+='8'">
 				<input type="button" value="9"onclick="op.value+='9'">
+				<input type="button" value="sin"onclick="op.value=giveSin(op.value)">
+
 				<input type="button" value="*"class="clor"onclick="op.value+='*'">
 			</div>
 			<div>
 				<input type="button" value="4"onclick="op.value+='4'">
 				<input type="button" value="5"onclick="op.value+='5'">
 				<input type="button" value="6"onclick="op.value+='6'">
+				<input type="button" value="cos"onclick="op.value=giveCos(op.value)">
+
 				<input type="button" value="-"class="clor"onclick="op.value+='-'">
 			</div>
 			<div>
 				<input type="button" value="1"onclick="op.value+='1'">
 				<input type="button" value="2"onclick="op.value+='2'">
 				<input type="button" value="3"onclick="op.value+='3'">
+				<input type="button" value="tan"onclick="op.value=giveTan(op.value)">
 				<input type="button" value="+"class="clor"onclick="op.value+='+'">
 			</div>
 			<div>
 				<input type="button" value="0" id="zero"onclick="op.value+='0'">
-				<input type="button" value="."onclick="op.value+=''">
+				<input type="button" value="."onclick="op.value+='.'">
+				<input type="button" value="log"onclick="op.value=Math.log(op.value)">
+
 				<input type="button" value="="class="clor" onclick="op.value=eval(op.value)" >
 				
 			</div>
